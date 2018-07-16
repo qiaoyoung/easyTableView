@@ -13,6 +13,8 @@
 		E45FB72120FC3860005EB433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45FB72020FC3860005EB433 /* Assets.xcassets */; };
 		E45FB72420FC3860005EB433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45FB72220FC3860005EB433 /* LaunchScreen.storyboard */; };
 		E45FB72720FC3860005EB433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45FB72620FC3860005EB433 /* main.m */; };
+		E45FB73020FC4A87005EB433 /* QYTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E45FB72F20FC4A87005EB433 /* QYTableViewDataSource.m */; };
+		E45FB73320FC72F7005EB433 /* QYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E45FB73220FC72F7005EB433 /* QYTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E45FB72320FC3860005EB433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45FB72520FC3860005EB433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45FB72620FC3860005EB433 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E45FB72E20FC4A87005EB433 /* QYTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYTableViewDataSource.h; sourceTree = "<group>"; };
+		E45FB72F20FC4A87005EB433 /* QYTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYTableViewDataSource.m; sourceTree = "<group>"; };
+		E45FB73120FC72F7005EB433 /* QYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYTableViewCell.h; sourceTree = "<group>"; };
+		E45FB73220FC72F7005EB433 /* QYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				E45FB71820FC385F005EB433 /* AppDelegate.m */,
 				E45FB71A20FC385F005EB433 /* ViewController.h */,
 				E45FB71B20FC385F005EB433 /* ViewController.m */,
+				E45FB73120FC72F7005EB433 /* QYTableViewCell.h */,
+				E45FB73220FC72F7005EB433 /* QYTableViewCell.m */,
+				E45FB72E20FC4A87005EB433 /* QYTableViewDataSource.h */,
+				E45FB72F20FC4A87005EB433 /* QYTableViewDataSource.m */,
 				E45FB71D20FC385F005EB433 /* Main.storyboard */,
 				E45FB72020FC3860005EB433 /* Assets.xcassets */,
 				E45FB72220FC3860005EB433 /* LaunchScreen.storyboard */,
@@ -143,6 +153,8 @@
 			files = (
 				E45FB71C20FC385F005EB433 /* ViewController.m in Sources */,
 				E45FB72720FC3860005EB433 /* main.m in Sources */,
+				E45FB73020FC4A87005EB433 /* QYTableViewDataSource.m in Sources */,
+				E45FB73320FC72F7005EB433 /* QYTableViewCell.m in Sources */,
 				E45FB71920FC385F005EB433 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSK4W8GYE6;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSK4W8GYE6;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

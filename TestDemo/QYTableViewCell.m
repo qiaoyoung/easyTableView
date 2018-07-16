@@ -2,23 +2,35 @@
 //  QYTableViewCell.m
 //  TestDemo
 //
-//  Created by 乔杨 on 2018/7/16.
+//  Created by Joeyoung on 2018/7/16.
 //  Copyright © 2018年 Joeyoung. All rights reserved.
 //
 
 #import "QYTableViewCell.h"
+ 
+@interface QYTableViewCell ()
+
+/** label */
+@property (nonatomic, strong) UILabel *label;
+
+@end
 
 @implementation QYTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        CGRect rect = CGRectMake(20, 0, 100, 44);
+        self.label = [[UILabel alloc] initWithFrame:rect];
+        self.label.backgroundColor = [UIColor whiteColor];
+        self.label.layer.cornerRadius = YES;
+        [self.contentView addSubview:self.label];
+    }
+    return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)refreshCellWithModel:(id)model {
+    self.label.text = (NSString *)model;
 }
 
 @end
